@@ -45,9 +45,37 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Moderators",
+        "Category": "Forgotten Frontier:fireplace",
+        "Subcategory": "Players:group:2",
+        "Description": "Comma separated hero names or client ids (the console shows each player's client id when they join; an id cannot be borrowed, a name can). Moderators show as [MOD] and can /kick, /ban, /unban and /say from the in-game chat",
+        "Keywords": "moderator,mod,admin,kick,ban",
+        "FieldName": "Moderators",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "moderators",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Welcome Message",
+        "Category": "Forgotten Frontier:fireplace",
+        "Subcategory": "Players:group:2",
+        "Description": "A line every player reads in the chat when they join (leave empty for none)",
+        "Keywords": "motd,welcome,message",
+        "FieldName": "WelcomeMessage",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "motd",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "World Name",
         "Category": "Forgotten Frontier:fireplace",
-        "Subcategory": "World:public:2",
+        "Subcategory": "World:public:3",
         "Description": "The world's save file (saves/<name>.json). A new name starts a new world; the old one is kept",
         "Keywords": "world,name,save",
         "FieldName": "WorldName",
@@ -61,7 +89,7 @@
     {
         "DisplayName": "World Seed",
         "Category": "Forgotten Frontier:fireplace",
-        "Subcategory": "World:public:2",
+        "Subcategory": "World:public:3",
         "Description": "Seed for a NEW world (0 = random). An existing world keeps its own seed",
         "Keywords": "seed,world",
         "FieldName": "WorldSeed",
@@ -77,7 +105,7 @@
     {
         "DisplayName": "Difficulty",
         "Category": "Forgotten Frontier:fireplace",
-        "Subcategory": "World:public:2",
+        "Subcategory": "World:public:3",
         "Description": "The world's difficulty for every hero who joins, whatever their own. A change applies at the next start (existing worlds too). Hardcore plays as Hard on a server (one life is a single-player rule)",
         "Keywords": "difficulty,mode",
         "FieldName": "Difficulty",
@@ -96,7 +124,7 @@
     {
         "DisplayName": "Autosave",
         "Category": "Forgotten Frontier:fireplace",
-        "Subcategory": "World:public:2",
+        "Subcategory": "World:public:3",
         "Description": "Minutes between world saves (the world is also saved when the last player leaves and on stop)",
         "Keywords": "autosave,save",
         "FieldName": "AutosaveMinutes",
@@ -113,7 +141,7 @@
     {
         "DisplayName": "Backups",
         "Category": "Forgotten Frontier:fireplace",
-        "Subcategory": "World:public:2",
+        "Subcategory": "World:public:3",
         "Description": "Older copies of the world file kept next to it (world.json.1 is the newest). Type backup in the console to keep one now",
         "Keywords": "backup,backups",
         "FieldName": "Backups",
@@ -129,7 +157,7 @@
     {
         "DisplayName": "Backup Interval",
         "Category": "Forgotten Frontier:fireplace",
-        "Subcategory": "World:public:2",
+        "Subcategory": "World:public:3",
         "Description": "Minutes between backups (one is also kept on the first save after each start)",
         "Keywords": "backup,interval",
         "FieldName": "BackupMinutes",
@@ -146,7 +174,7 @@
     {
         "DisplayName": "Download Location",
         "Category": "Forgotten Frontier:fireplace",
-        "Subcategory": "Updates:system_update:3",
+        "Subcategory": "Updates:system_update:4",
         "Description": "Where updates come from: a folder URL holding FFServer-win-x64.zip and FFServer-linux-x64.zip (the GitHub releases of the game, or your own web server; Tools/release.sh puts them there)",
         "Keywords": "update,download,url",
         "FieldName": "ServerDownloadBase",
