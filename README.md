@@ -1,7 +1,8 @@
-# The Forgotten Frontier: releases
+# The Forgotten Frontier releases (archived)
 
-Game and dedicated server downloads are on the [Releases](https://github.com/jeatheak/forgotten-frontier-releases/releases) page.
+This repository has moved. The game, the dedicated server (FFServer) and the CubeCoders AMP template are released in
+**[jeatheak/forgotten_frontier_amp](https://github.com/jeatheak/forgotten_frontier_amp/releases)** since v0.18.0.
 
-The CubeCoders AMP template moved to [jeatheak/forgotten_frontier_amp](https://github.com/jeatheak/forgotten_frontier_amp).
-In AMP, replace the configuration repository `jeatheak/forgotten-frontier-releases:main` with
-`jeatheak/forgotten_frontier_amp:main`. AMP cannot upgrade instances from a repository with a hyphen in its name.
+The last release here (v0.18.0) carries older games over: their update check finds it, and v0.18.0 checks the new
+repository. AMP hosts: add `jeatheak/forgotten_frontier_amp:main` as configuration repository and set the instance's
+*Download Location* to `https://github.com/jeatheak/forgotten_frontier_amp/releases/latest/download`.
